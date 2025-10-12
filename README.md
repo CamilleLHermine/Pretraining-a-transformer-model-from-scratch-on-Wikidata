@@ -37,20 +37,18 @@ This project looks into how LLMs acquire language understanding from text-only t
 ### Model Architecture Diagram
 
 Kaggle Dataset (Wikidata JSONL)
-        ↓
+        >
 Hugging Face Datasets (streaming)
-        ↓
+        >
 Text cleaning & merging (description + abstract + sections)
-        ↓
+        >
 Transformer model init (emb dim, layers, heads)
-        ↓
+        >
 Pretraining (CLM)
-        ↓
+        >
 Trainer: AdamW, LR scheduler, grad accumulation
-        ↓
+        >
 TensorBoard logging & checkpoints
-        ↓
-Pretrained model
 
 ---
 
